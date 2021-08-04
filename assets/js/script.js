@@ -27,7 +27,7 @@ var fetchAPI = function(cityName) {
     var hum = document.querySelectorAll('.hum');
     var uvi = document.querySelector('.uv');
 
-    return fetch('http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=2b549fc3c2fff6bcd358befc6405596d').then(function(response) {
+    return fetch('https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=2b549fc3c2fff6bcd358befc6405596d').then(function(response) {
         if(response.ok){
             var newCityName = true;
             for(var i = 0; i < cityButtons.length; i++) {
@@ -62,7 +62,7 @@ var fetchAPI = function(cityName) {
             var currMonth = currDate.getMonth();
             var currYear = currDate.getFullYear();
             date[0].textContent = '(' + (currMonth + 1) + '/' + currDayOfMonth + '/' + currYear + ')';
-            currCity.innerHTML += ' ' + `<span class="date"> ${date[0].textContent} </span>` + ` <img src="http://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png"/>`;
+            currCity.innerHTML += ' ' + `<span class="date"> ${date[0].textContent} </span>` + ` <img src="https://openweathermap.org/img/wn/${data.current.weather[0].icon}@2x.png"/>`;
             temp[0].textContent = data.current.temp + ' °F';
             wind[0].textContent = data.current.wind_speed + ' MPH';
             hum[0].textContent = data.current.humidity + '%';
@@ -88,7 +88,7 @@ var fetchAPI = function(cityName) {
                 var month = newDate.getMonth();
                 var year = newDate.getFullYear();
                 date[i + 1].textContent = (month + 1) + "-" + (dayOfMonth + 1) + "-" + year;;
-                icon[i].setAttribute('src', `http://openweathermap.org/img/wn/${data.daily[i + 1].weather[0].icon}.png`);
+                icon[i].setAttribute('src', `https://openweathermap.org/img/wn/${data.daily[i + 1].weather[0].icon}.png`);
                 temp[i + 1].textContent = data.daily[i + 1].temp.day + ' °F';
                 wind[i + 1].textContent = data.daily[i + 1].wind_speed + ' MPH';
                 hum[i + 1].textContent = data.daily[i + 1].humidity + '%';
