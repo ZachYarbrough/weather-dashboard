@@ -1,0 +1,72 @@
+
+.head {
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    background: rgb(37,29,158);
+    background: linear-gradient(90deg, rgba(37,29,158,1) 0%, rgba(28,164,161,1) 100%);
+}
+
+.search {
+    border-bottom: solid .1rem black;
+}
+
+.weather {
+    border: solid .1rem black;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(50, 141, 202);
+}
+
+.weather-container {
+    justify-content: center;
+    align-content: center;
+}
+
+h3.date {
+    font-size: 24px;
+}
+
+.input-city {
+    border-radius: 5px;
+}
+
+.submit-city {
+    color: white;
+    background-color: rgb(50, 141, 202);
+}
+
+.submit-city,
+button {
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+.day1,
+.day2,
+.day3,
+.day4,
+.day5 {
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid .1rem black;
+    color: white;
+    background: rgb(50, 141, 202);
+}
+
+
+.uv {
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: white;
+}
+.low {
+    background-color: green;
+}
+.moderate {
+    background-color: yellow;
+}
+.high {
+    background-color: red;
+}

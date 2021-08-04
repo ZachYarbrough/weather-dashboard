@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    
+<body class="container">
+    <header class="row">
+        <h1 class="col-12 text-center head p-3 m-3">Weather Dashboard</h1>
+    </header>
+    <main class="row">
+        <section class="col-4">
+            <div class="search pb-3">
+                <h2>Search for a City:</h2>
+                <input type="text" placeholder="San Diego" class="col-12 input-city">
+                <input type="submit" class="col-12 mt-3 submit-city">
+            </div>
+            <div class="cities"></div>
+        </section>
+        <section class="col-8 row weather-container">
+            <div class="weather col-12">
+                <h1 class="city"> <span class="date"></span><img src="" alt="" class="curr-icon"></h1>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+                <p>UV Index: <span class="uv"></span></p>
+            </div>
+            <h2 class="col-12 m-3">5 Day Forcast:</h2>
+            <div class="day1 col-2 m-2">
+                <h3 class="date"></h1>
+                    <img class="icon"></img>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+            </div>
+            <div class="day2 col-2 m-2">
+                <h3 class="date"></h1>                
+                    <img class="icon"></img>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+            </div>
+            <div class="day3 col-2 m-2">
+                <h3 class="date"></h1>
+                    <img class="icon"></img>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+            </div>
+            <div class="day4 col-2 m-2">
+                <h3 class="date"></h1>
+                    <img class="icon"></img>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+            </div>
+            <div class="day5 col-2 m-2">
+                <h3 class="date"></h1>
+                <img class="icon"></img>
+                <p>Temp: <span class="temp"></span></p>
+                <p>Wind: <span class="wind"></span></p>
+                <p>Humidity: <span class="hum"></span></p>
+            </div>
+        </section>
+    </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
