@@ -54,9 +54,10 @@ var fetchAPI = function(cityName) {
         currCity.textContent = data.name;
         var lat = data.coord.lat;
         var lon = data.coord.lon;
-        fetch('https://api.openweathermap.org/data/2.5/onecall?lat='+ lat + '&lon=' + lon + '&units=imperial&appid=2b549fc3c2fff6bcd358befc6405596d').then(function(response) {
+        fetch('https://api.openweathermap.org/data/3.0/forecast?lat='+ lat + '&lon=' + lon + '&units=imperial&appid=2b549fc3c2fff6bcd358befc6405596d').then(function(response) {
             return response.json();
         }).then(function(data) {
+            console.log(data)
             var currDate = new Date(data.current.dt * 1000);
             var currDayOfMonth = currDate.getDate();
             var currMonth = currDate.getMonth();
